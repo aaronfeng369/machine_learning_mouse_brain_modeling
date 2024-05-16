@@ -1,0 +1,25 @@
+*Assembly, name=Assembly
+**  
+*Instance, name=BRAIN-1, part=BRAIN
+*End Instance
+**  
+*Instance, name=IMPACTOR-3MM-1, part=IMPACTOR-3MM
+        -2.4,          7.84,         10.36
+        -2.4,          7.84,         10.36,         -2.4,          8.84,         10.36,          90.
+*End Instance
+**
+*Nset, nset=IMPACTOR-3MM-RefPt, instance=IMPACTOR-3MM-1
+ 1021,
+*Nset, nset=IMPACTOR-3MM-RefPt-internal, internal, instance=IMPACTOR-3MM-1
+ 1021,
+*Nset, nset=ASSEMBLY-IMPACTOR-ALL, instance=IMPACTOR-3MM-1, generate
+    1,  1020,     1
+*Elset, elset=ASSEMBLY-IMPACTOR-ALL, instance=IMPACTOR-3MM-1, generate
+   1,  784,    1
+*Nset, nset=_T-IMPACTOR-3MM-SYS, internal
+IMPACTOR-3MM-RefPt, 
+*Transform, nset=_T-IMPACTOR-3MM-SYS, type=C
+        -2.4,          7.84,         10.36,         -1.4,          7.84,         10.36
+** Constraint: RigidBody-1
+*Rigid Body, ref node=IMPACTOR-3MM-RefPt-internal, elset=ASSEMBLY-IMPACTOR-ALL
+*End Assembly

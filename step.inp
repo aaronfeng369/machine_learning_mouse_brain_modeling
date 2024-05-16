@@ -1,0 +1,28 @@
+** ----------------------------------------------------------------
+** 
+** STEP: Step-1
+** 
+*Step, name=Step-1, nlgeom=YES
+*Dynamic, Explicit
+, 0.005
+*Bulk Viscosity
+0.06, 1.2
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: Vel-BC-1 Type: Velocity/Angular velocity
+*Boundary, amplitude=VELO_1, type=VELOCITY
+IMPACTOR-3MM-RefPt, 3, 3, 1.
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, number interval=1, time marks=NO
+** 
+** FIELD OUTPUT: F-Output-1
+** 
+*Output, field, variable=PRESELECT, number interval=32
+** 
+** HISTORY OUTPUT: H-Output-1
+** 
+*Output, history, variable=PRESELECT
+*End Step

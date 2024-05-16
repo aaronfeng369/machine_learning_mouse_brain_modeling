@@ -1,0 +1,29 @@
+*Heading
+** Job name: mouseBrainCCI Model name: mouseBrainCCI
+*Preprint, echo=NO, model=NO, history=NO, contact=NO
+**
+** ==========================================
+** Mouse brain nodes and elements
+*include, input=partBrain_64.inp
+** ==========================================
+** Impactor nodes and elements
+*include, input=partImpactor.inp
+** ==========================================
+** ASSEMBLY
+*include, input=assembly.inp
+** ==========================================
+** AMPLITUDE
+*include, input=amplitude.inp
+** ==========================================
+** MATERIALS
+*include, input=materials.inp
+** ==========================================
+** INTERACTIONS
+*include, input=interactions.inp
+** ==========================================
+** LOAD
+*include, input=load.inp
+** ==========================================
+** STEP
+*include, input=Step.inp
+

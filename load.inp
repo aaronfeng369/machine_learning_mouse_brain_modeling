@@ -1,0 +1,18 @@
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: Disp-BC-1 Type: Displacement/Rotation
+*Boundary
+IMPACTOR-3MM-RefPt, 1, 1
+** Name: Disp-BC-2 Type: Displacement/Rotation
+*Boundary
+IMPACTOR-3MM-RefPt, 2, 2
+** Name: Disp-BC-3 Type: Displacement/Rotation
+*Boundary
+IMPACTOR-3MM-RefPt, 4, 4
+** Name: Disp-BC-4 Type: Displacement/Rotation
+*Boundary
+IMPACTOR-3MM-RefPt, 5, 5
+** Name: Disp-BC-5 Type: Displacement/Rotation
+*Boundary
+IMPACTOR-3MM-RefPt, 6, 6

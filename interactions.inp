@@ -1,0 +1,15 @@
+** 
+** INTERACTION PROPERTIES
+** 
+*Surface Interaction, name=INTPROP-1
+*Friction
+0.,
+*Surface Behavior, pressure-overclosure=HARD
+** 
+** INTERACTIONS
+** 
+** Interaction: general_contact
+*Contact, op=NEW
+*Contact Inclusions, ALL EXTERIOR
+*Contact Property Assignment
+ ,  , INTPROP-1

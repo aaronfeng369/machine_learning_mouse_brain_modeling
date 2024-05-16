@@ -1,0 +1,28 @@
+*Material, name=AL
+*Density
+ 0.0027,
+*Elastic
+ 6.9e+10, 0.33
+*Material, name=CSF
+*Density
+ 0.001,
+*Hyperelastic, neo hooke, moduli=LONG TERM
+ 116.5, 9.3e-10
+*Viscoelastic, time=PRONY
+ 0.4275,    0., 0.0125
+*Material, name=GM
+*Density
+ 0.001,
+*Hyperelastic, neo hooke, moduli=LONG TERM
+ 766.5, 9.3e-10
+*Viscoelastic, time=PRONY
+ 0.4727,    0., 0.013
+ 0.2918,    0., 0.184
+*Material, name=WM
+*Density
+ 0.001,
+*Hyperelastic, neo hooke, moduli=LONG TERM
+917., 9.3e-10
+*Viscoelastic, time=PRONY
+ 0.3885,    0., 0.011
+ 0.2863,    0., 0.176
